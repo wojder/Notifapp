@@ -1,6 +1,5 @@
 package com.wojder.notifapp;
 
-
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -9,7 +8,6 @@ import android.support.design.widget.FloatingActionButton;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
 
 /**
  * A simple {@link Fragment} subclass.
@@ -22,21 +20,15 @@ public class ContentFragmentWithFab extends Fragment implements View.OnClickList
         // Required empty public constructor
     }
 
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState){
-    // Inflate the layout for this fragment
     View result = inflater.inflate(R.layout.content_fragment_with_fab, container, false);
-//    result.findViewById(R.id.fab_button).setOnClickListener(this);
 
         fab = (FloatingActionButton) result.findViewById(R.id.fab_button);
         fab.setOnClickListener(this);
 
-
-
     return (result);
-//                inflater.inflate(R.layout.content_fragment_with_fab, container, false);
     }
 
     @Override
